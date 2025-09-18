@@ -19,13 +19,14 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Button } from "./ui/button";
+import { SidebarTrigger } from "./ui/sidebar";
 
 const Navbar = () => {
   const { setTheme } = useTheme();
   return (
     <div className="p-4 flex justify-between items-center">
       {/* left side */}
-      <div>left side</div>
+      <SidebarTrigger />
 
       {/* right side */}
       <div className="gap-4 flex items-center">
