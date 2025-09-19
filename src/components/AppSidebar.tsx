@@ -1,8 +1,12 @@
 import {
+  AppWindow,
+  Brush,
   Calendar,
   ChevronUpIcon,
+  DollarSign,
   Home,
   Inbox,
+  PlusIcon,
   Search,
   Settings,
   User2Icon,
@@ -13,12 +17,14 @@ import {
   SidebarContent,
   SidebarFooter,
   SidebarGroup,
+  SidebarGroupAction,
   SidebarGroupContent,
   SidebarGroupLabel,
   SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
+  SidebarSeparator,
 } from "@/components/ui/sidebar";
 import Logo from "./Logo";
 import {
@@ -57,6 +63,25 @@ const items = [
   },
 ];
 
+// Projects
+const projects = [
+  {
+    name: "Development",
+    url: "#",
+    icon: AppWindow,
+  },
+  {
+    name: "Marketing",
+    url: "#",
+    icon: DollarSign,
+  },
+  {
+    name: "Graphics",
+    url: "#",
+    icon: Brush,
+  },
+];
+
 const AppSidebar = () => {
   return (
     <Sidebar collapsible="icon">
@@ -71,6 +96,8 @@ const AppSidebar = () => {
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>
+      <SidebarSeparator />
+
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Application</SidebarGroupLabel>
@@ -89,14 +116,36 @@ const AppSidebar = () => {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
+
+        <SidebarGroup>
+          <SidebarGroupLabel>Projects</SidebarGroupLabel>
+          <SidebarGroupAction title="Add Project">
+            <PlusIcon /> <span className="sr-only">Add Project</span>
+          </SidebarGroupAction>
+          <SidebarGroupContent>
+            <SidebarMenu>
+              {projects.map((project) => (
+                <SidebarMenuItem key={project.name}>
+                  <SidebarMenuButton asChild>
+                    <a href={project.url}>
+                      <project.icon />
+                      <span>{project.name}</span>
+                    </a>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+              ))}
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
       </SidebarContent>
+
       <SidebarFooter>
         <SidebarMenu>
           <SidebarMenuItem>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <SidebarMenuButton>
-                  <User2Icon /> John Doe <ChevronUpIcon className="ml-auto" />
+                  <User2Icon /> Alex Di <ChevronUpIcon className="ml-auto" />
                 </SidebarMenuButton>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
