@@ -1,13 +1,16 @@
 import {
-  AppWindow,
-  Brush,
   Calendar,
+  ChartPie,
+  ChevronDownIcon,
   ChevronUpIcon,
-  DollarSign,
+  Frame,
   Home,
   Inbox,
+  LifeBuoyIcon,
+  Map,
   PlusIcon,
   Search,
+  SendIcon,
   Settings,
   User2Icon,
 } from "lucide-react";
@@ -27,6 +30,11 @@ import {
   SidebarSeparator,
 } from "@/components/ui/sidebar";
 import Logo from "./Logo";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "./ui/collapsible";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -66,19 +74,19 @@ const items = [
 // Projects
 const projects = [
   {
-    name: "Development",
+    name: "Design Engineering",
     url: "#",
-    icon: AppWindow,
+    icon: Frame,
   },
   {
-    name: "Marketing",
+    name: "Sales and Marketing",
     url: "#",
-    icon: DollarSign,
+    icon: ChartPie,
   },
   {
-    name: "Graphics",
+    name: "Travel",
     url: "#",
-    icon: Brush,
+    icon: Map,
   },
 ];
 
@@ -137,6 +145,31 @@ const AppSidebar = () => {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
+
+        <Collapsible defaultOpen className="group/collapsible">
+          <SidebarGroup>
+            <SidebarGroupLabel asChild>
+              <CollapsibleTrigger>
+                Help
+                <ChevronDownIcon className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
+              </CollapsibleTrigger>
+            </SidebarGroupLabel>
+            <CollapsibleContent>
+              <SidebarGroupContent>
+                <SidebarMenu>
+                  <SidebarMenuItem>
+                    <SidebarMenuButton>
+                      <LifeBuoyIcon /> Support
+                    </SidebarMenuButton>
+                    <SidebarMenuButton>
+                      <SendIcon /> Feedback
+                    </SidebarMenuButton>
+                  </SidebarMenuItem>
+                </SidebarMenu>
+              </SidebarGroupContent>
+            </CollapsibleContent>
+          </SidebarGroup>
+        </Collapsible>
       </SidebarContent>
 
       <SidebarFooter>
