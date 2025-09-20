@@ -40,7 +40,15 @@ export default async function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <SidebarProvider defaultOpen={defaultOpen}>
+          <SidebarProvider
+            defaultOpen={defaultOpen}
+            style={
+              {
+                "--sidebar-width": "20rem",
+                "--sidebar-width-mobile": "20rem",
+              } as React.CSSProperties
+            }
+          >
             <Sidebar />
             <main className="w-full">
               <Navbar />
