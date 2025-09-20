@@ -7,8 +7,8 @@ import {
   Home,
   Inbox,
   LifeBuoyIcon,
-  Map,
   MoreHorizontalIcon,
+  Map as mapIcon,
   PlusIcon,
   Search,
   SendIcon,
@@ -92,7 +92,7 @@ const projects = [
   {
     name: "Travel",
     url: "#",
-    icon: Map,
+    icon: mapIcon,
   },
 ];
 
