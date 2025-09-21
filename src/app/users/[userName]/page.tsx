@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import CardList from "@/components/CardList";
+import EditUser from "@/components/EditUser";
 import { Badge } from "@/components/ui/badge";
 import {
   Breadcrumb,
@@ -18,12 +19,14 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { Button } from "@/components/ui/button";
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
 import { Progress } from "@/components/ui/progress";
+import { Sheet, SheetTrigger } from "@/components/ui/sheet";
 
 const SingleUserPage = () => {
   const [progress, setProgress] = useState(13);
@@ -136,15 +139,24 @@ const SingleUserPage = () => {
           </div>
 
           <div className="bg-primary-foreground px-6 py-6 rounded-sm">
-            <h1 className="leading-none text-xl font-semibold">User Info</h1>
-            <div className="space-y-2 mt-4">
-              <div>
-                <p className="text-muted-foreground text-sm">
-                  Profile completion
-                </p>
-                <Progress value={progress} className="mt-2" />
-              </div>
+            <div className="flex items-center justify-between">
+              <h1 className="leading-none text-xl font-semibold">User Info</h1>
+              <Sheet>
+                <SheetTrigger asChild>
+                  <Button>Edit User</Button>
+                </SheetTrigger>
+                <EditUser />
+              </Sheet>
+            </div>
 
+            <div className="pt-6">
+              <p className="text-muted-foreground text-sm">
+                Profile completion
+              </p>
+              <Progress value={progress} className="mt-2" />
+            </div>
+
+            <div className="space-y-2 pt-6">
               <div className="flex items-center gap-2">
                 <span className="font-medium">Username:</span>
                 <span>Jennifer Smith</span>
@@ -169,6 +181,10 @@ const SingleUserPage = () => {
                 <span className="font-medium">Role:</span>
                 <Badge>Admin</Badge>
               </div>
+
+              <p className="text-muted-foreground text-sm pt-2">
+                Joined on 21.12.2026
+              </p>
             </div>
           </div>
 
