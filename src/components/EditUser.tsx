@@ -81,7 +81,9 @@ const EditUser = () => {
                     <FormControl>
                       <Input {...field} />
                     </FormControl>
-                    <FormDescription>This is your public name.</FormDescription>
+                    <FormDescription>
+                      This is your public username.
+                    </FormDescription>
                     <FormMessage />
                   </FormItem>
                 )}

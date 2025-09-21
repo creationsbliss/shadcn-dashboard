@@ -1,12 +1,10 @@
 "use client";
 
 import { TrendingUpIcon } from "lucide-react";
-import { Area, AreaChart, Bar, BarChart, CartesianGrid, XAxis } from "recharts";
+import { Area, AreaChart, CartesianGrid, XAxis } from "recharts";
 import {
   type ChartConfig,
   ChartContainer,
-  ChartLegend,
-  ChartLegendContent,
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";

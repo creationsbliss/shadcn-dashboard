@@ -8,8 +8,10 @@ import {
   ShieldCheckIcon,
 } from "lucide-react";
 import { useEffect, useState } from "react";
+import AppLineChart from "@/components/AppLineChart";
 import CardList from "@/components/CardList";
 import EditUser from "@/components/EditUser";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import {
   Breadcrumb,
@@ -195,11 +197,27 @@ const SingleUserPage = () => {
 
         {/* Right */}
         <div className="w-full xl:w-2/3 space-y-4">
-          <div className="bg-primary-foreground px-6 py-6 rounded-sm">
-            User Card
+          <div className="bg-primary-foreground px-6 py-6 rounded-sm space-y-4">
+            <div className="flex items-center gap-2">
+              <Avatar className="size-12">
+                <AvatarImage src="https://github.com/leerob.png" />
+                <AvatarFallback>JS</AvatarFallback>
+              </Avatar>
+              <h1 className="text-xl font-semibold">Jennifer Smith</h1>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              Jennifer Smith is an Admin based in New York, NY. She can be
+              reached at jennifersmith@one.com or by phone at +1234 5678. As a
+              verified administrator, Jennifer oversees user management, ensures
+              smooth operations, and maintains platform security. She plays a
+              key role in coordinating tasks and supporting both team members
+              and users.
+            </p>
           </div>
-          <div className="bg-primary-foreground px-6 py-6 rounded-sm">
-            Chart
+
+          <div className="bg-primary-foreground px-6 py-6 rounded-sm space-y-6">
+            <h1 className="text-xl font-semibold">User Activity</h1>
+            <AppLineChart />
           </div>
         </div>
       </div>
