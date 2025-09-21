@@ -36,7 +36,9 @@ const AppBarChart = () => {
   return (
     <Card className="border-0">
       <CardHeader>
-        <CardTitle>Website Visitors by Page</CardTitle>
+        <CardTitle className="text-xl font-semibold">
+          Website Visitors by Page
+        </CardTitle>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig} className="min-h-[200px] w-full">

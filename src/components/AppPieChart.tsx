@@ -63,7 +63,9 @@ export function AppPieChart() {
   return (
     <Card className="flex flex-col border-0">
       <CardHeader className="items-center pb-0">
-        <CardTitle>Visitors by Browser</CardTitle>
+        <CardTitle className="text-xl font-semibold">
+          Visitors by Browser
+        </CardTitle>
         <CardDescription>January - June 2026</CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">

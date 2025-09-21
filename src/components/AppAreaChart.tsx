@@ -43,7 +43,9 @@ const AppAreaChart = () => {
   return (
     <Card className="border-0">
       <CardHeader>
-        <CardTitle>6-Month Visitor Growth</CardTitle>
+        <CardTitle className="text-xl font-semibold">
+          6-Month Visitor Growth
+        </CardTitle>
         <CardDescription>
           Showing total visitors for the last 6 months
         </CardDescription>

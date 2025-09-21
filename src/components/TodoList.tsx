@@ -16,7 +16,7 @@ const TodoList = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="px-6 py-6">
-      <h1 className="pb-6 leading-none font-semibold">Task Board</h1>
+      <h1 className="pb-6 leading-none font-semibold text-xl">Task Board</h1>
 
       <Popover open={open} onOpenChange={setOpen}>
         <PopoverTrigger asChild>

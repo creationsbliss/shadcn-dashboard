@@ -93,7 +93,7 @@ const CardList = ({ title }: { title: string }) => {
     title === "Popular Content" ? popularContent : latestTransactions;
   return (
     <div className="pb-6">
-      <div className="py-6 px-6 leading-none font-semibold">
+      <div className="py-6 px-6 leading-none font-semibold text-xl">
         <h1>{title}</h1>
       </div>
       <div className="px-6 flex flex-col gap-2">

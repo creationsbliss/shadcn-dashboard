@@ -106,7 +106,7 @@ const AppSidebar = () => {
             <SidebarMenuButton asChild>
               <Link href="/">
                 <Logo />
-                <span>Dashboard</span>
+                <span className="text-xl font-semibold">DashSync</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
