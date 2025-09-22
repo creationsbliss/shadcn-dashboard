@@ -1,6 +1,6 @@
 # Project Detail
 
-A modern dashboard application built with Next.js and shadcn/ui, styled with Tailwind CSS, and powered by TypeScript. <br/>
+A modern dashboard application built with Next.js and shadcn/ui, styled with Tailwind CSS, and powered by TypeScript. <br/>  <br/>
 Live project: [https://shadcn-dashboard-plum.vercel.app/](https://shadcn-dashboard-plum.vercel.app/) 
 
 ## Features  
