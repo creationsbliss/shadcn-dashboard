@@ -1,8 +1,6 @@
-# My Project  
+# Project Detail
 
 A modern dashboard application built with [Next.js](https://nextjs.org) and [shadcn/ui](https://ui.shadcn.com), styled with [Tailwind CSS](https://tailwindcss.com), and powered by [TypeScript](https://www.typescriptlang.org).  
-
----
 
 ## 🚀 Features  
 - ⚡ Built with **Next.js 15+ App Router**  
@@ -11,7 +9,6 @@ A modern dashboard application built with [Next.js](https://nextjs.org) and [sha
 - 🔠 Optimized fonts with [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts)  
 - 🛠 Type-safe development with **TypeScript**  
 
----
 
 ## 📦 Tech Stack  
 - [Next.js](https://nextjs.org) – React framework  
@@ -19,10 +16,10 @@ A modern dashboard application built with [Next.js](https://nextjs.org) and [sha
 - [Tailwind CSS](https://tailwindcss.com) – Utility-first styling  
 - [TypeScript](https://www.typescriptlang.org) – Static typing  
 
----
 
 ## 🛠 Getting Started  
 
+```bash
 ### 1. Clone the repository  
 ```bash
 git clone https://github.com/creationsbliss/shadcn-dashboard.git
