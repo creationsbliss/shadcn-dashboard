@@ -53,18 +53,18 @@ import { Input } from "./ui/input";
 const items = [
   {
     title: "Home",
-    url: "#",
+    url: "/",
     icon: Home,
+  },
+  {
+    title: "Customers",
+    url: "/users/1",
+    icon: Users,
   },
   {
     title: "Analytics",
     url: "#",
     icon: ChartSpline,
-  },
-  {
-    title: "Customers",
-    url: "#",
-    icon: Users,
   },
   {
     title: "Payouts",
