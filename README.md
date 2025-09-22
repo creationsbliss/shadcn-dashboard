@@ -25,8 +25,8 @@ A modern dashboard application built with [Next.js](https://nextjs.org) and [sha
 
 ### 1. Clone the repository  
 ```bash
-git clone https://github.com/username/repo-name.git
-cd repo-name
+git clone https://github.com/creationsbliss/shadcn-dashboard.git
+cd shadcn-dashboard
 
 ### 2. Install dependencies
 ```bash
@@ -50,5 +50,4 @@ bun dev
 
 ### 4. Open the project in your browser
 Once the server is running, open:
-
 👉 http://localhost:3000
