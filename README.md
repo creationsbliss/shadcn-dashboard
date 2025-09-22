@@ -1,9 +1,44 @@
-This is a [shadcn/ui], [Next.js] project.
+# My Project  
 
-## Getting Started
+A modern dashboard application built with [Next.js](https://nextjs.org) and [shadcn/ui](https://ui.shadcn.com), styled with [Tailwind CSS](https://tailwindcss.com), and powered by [TypeScript](https://www.typescriptlang.org).  
 
-First, run the development server:
+---
 
+## 🚀 Features  
+- ⚡ Built with **Next.js 15+ App Router**  
+- 🎨 UI components from **shadcn/ui**  
+- 💨 Styled with **Tailwind CSS**  
+- 🔠 Optimized fonts with [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts)  
+- 🛠 Type-safe development with **TypeScript**  
+
+---
+
+## 📦 Tech Stack  
+- [Next.js](https://nextjs.org) – React framework  
+- [shadcn/ui](https://ui.shadcn.com) – Accessible UI components  
+- [Tailwind CSS](https://tailwindcss.com) – Utility-first styling  
+- [TypeScript](https://www.typescriptlang.org) – Static typing  
+
+---
+
+## 🛠 Getting Started  
+
+### 1. Clone the repository  
+```bash
+git clone https://github.com/username/repo-name.git
+cd repo-name
+
+### 2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+
+### 3. Run the development server
 ```bash
 npm run dev
 # or
@@ -12,10 +47,8 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4. Open the project in your browser
+Once the server is running, open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+👉 http://localhost:3000
